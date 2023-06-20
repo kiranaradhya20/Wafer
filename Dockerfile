@@ -1,13 +1,10 @@
 FROM python:3.8-slim-buster
 
 RUN apt update -y && apt install awscli -y
-WORKDIR /app
+WORKDIR /app1
 
-COPY . /app
+COPY . /app1
 
 RUN pip install -r requirements.txt
-RUN pip install --upgrade accelerate
-RUN pip uninstall -y transformers accelerate
-RUN pip install transformers accelerate
 
 CMD ["python3", "main.py"]
