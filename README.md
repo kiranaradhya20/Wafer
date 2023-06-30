@@ -15,10 +15,10 @@ https://github.com/kiranaradhya20/Wafer_Falut_Detection
 ### STEP 01- Create a conda environment after opening the repository
 
 
-conda create -n wafer python=3.8 -y
+conda create -n venv python=3.8 -y
 
 
-conda activate wafer
+conda activate venv
 ```
 
 
@@ -80,7 +80,7 @@ open up you local host and port
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/wafer
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
